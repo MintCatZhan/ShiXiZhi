@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>首页</title>
+</head>
+<body>
+<!--引入导航栏-->
+<div>
+    <h1>detail page</h1>
+    <div>
+        <h3 th:utext="${article.title}"></h3>
+        <div th:utext="${article.content}"></div>
+    </div>
+</div>
+</body>
+</html>
