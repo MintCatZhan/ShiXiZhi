@@ -30,6 +30,6 @@ public interface ArticleDao {
     public void delete(String id);
 
     @Insert("insert into article (content, date, summary, title, category_id) " +
-            "values (#{content}, #{date}, #{summary}, #{title}, #{category_id})")
+            "values (#{content}, #{date}, #{summary}, #{title}, #{category})")
     public void save(Article article);
 }
