@@ -29,7 +29,7 @@ public interface ArticleDao {
     @Delete("delect * from article where id=#{id}")
     public void delete(String id);
 
-    @Insert("insert into article (content, date, summary, title, category_id) " +
-            "values (#{content}, #{date}, #{summary}, #{title}, #{category})")
+    @Insert("insert into article (id, content, date, summary, title, category_id) " +
+            "values (2, #{content}, #{date}, #{summary}, #{title}, #{category.id})")
     public void save(Article article);
 }
